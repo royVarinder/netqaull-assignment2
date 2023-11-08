@@ -1,0 +1,27 @@
+.containerOverRideClass {
+  position: relative;
+  margin: auto;
+  top: 18vw;
+  width: 90%!important;
+}
+
+.imageActions {
+  display:  flex;
+  /* justify-content: center; */
+  margin-top: 30px;
+}
+
+.carousel-control-customized {
+  width: 2%!important;
+}
+
+.ImageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10%;
+}
+
+.ImageContainer img {
+  width: 50%;
+}
