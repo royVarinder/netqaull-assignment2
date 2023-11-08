@@ -12,12 +12,12 @@ export const Image = () => {
         return <h1>Something went Wrong</h1>
     }
     if (!!data) {
-        imageObject = data.photo;
-    }
+        imageObject = data?.photo || {};
+    } 
     return <>
         <div className="ImageContainer">
             {isLoading ? <div className="loadingContainer"> Loading... </div> : <div className="imageContainerBody">
-                <img src={imageObject.url} />
+                <img src={imageObject?.url} alt={imageObject?.title} />
                 <div className="title">
                     <h3>{imageObject?.title}</h3>
                 </div>

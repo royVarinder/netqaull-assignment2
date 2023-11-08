@@ -52,7 +52,7 @@ export const LandingPage = () => {
                                                         image.map((image, index) => {
                                                             return (
                                                                 <div key={index} className="col-xs-3">
-                                                                    <img src={image.url} alt="Los Angeles" title={image?.title} style={{ width: "100%" }} />
+                                                                    <img src={image.url} alt={image?.title} title={image?.title} style={{ width: "100%" }} />
                                                                     <div className="carousel-caption">
                                                                         <h3>{image?.title}</h3>
                                                                         <p>{image?.description}</p>
