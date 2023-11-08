@@ -7,9 +7,10 @@ export const Image = () => {
     let imageObject = {}
     const { isError, isLoading, isSuccess, data, error } = useGetImageByIdQuery(imageId);
 
+    //api given any error it will go to the home page
     if (isError) {
         console.error(error);
-        return <h1>Something went Wrong</h1>
+        navigate("/")
     }
     if (!!data) {
         imageObject = data?.photo || {};
